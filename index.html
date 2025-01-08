@@ -8,6 +8,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <!-- Nav bar -->
@@ -69,11 +70,11 @@
 
     <!-- jumbotron -->
     <div class="p-5 bg-secondary text-white">
-      <marquee width="60%" direction="right" height="100px">
-        Professionalism is our watch word .
-      </marquee>
+      <div class="text-center" style="width: 60%; margin: 0 auto">
+        <p class="animate-text">Professionalism is our watchword.</p>
+      </div>
       <h1 class="text-center text-dark">Welcome to our world</h1>
-      <p class="text-center text-dark">Professionalism is our watch word</p>
+      <p class="text-center text-dark">Professionalism is our watchword</p>
     </div>
 
     <!-- carousel -->
@@ -132,26 +133,26 @@
 
     <section class="container">
       <div class="row my-5 justify-content-center align-items-center">
-        <!-- content section -->
+        <!-- Content section -->
         <div class="col-lg-8">
-          <h1>Our Services includes:</h1>
-          <ul>
-            <li>Import</li>
-            <li>Epxort</li>
-            <li>freight forwarding</li>
-            <li>Procurement Services</li>
-            <li>Logistics</li>
-            <li>Warehousing</li>
+          <h1>Our Services Include:</h1>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Import</li>
+            <li class="list-group-item">Export</li>
+            <li class="list-group-item">Freight Forwarding</li>
+            <li class="list-group-item">Procurement Services</li>
+            <li class="list-group-item">Logistics</li>
+            <li class="list-group-item">Warehousing</li>
           </ul>
-          <button type="button" class="btn btn-dark">view</button>
+          <button type="button" class="btn btn-dark mt-3">View</button>
         </div>
 
-        <!-- image side -->
+        <!-- Image side -->
         <div class="col-lg-4">
           <img
             src="https://media.gettyimages.com/id/94892518/photo/an-airport-ground-staff-member-loads-cargo-onto-an-asiana-ai.jpg?s=1024x1024&w=gi&k=20&c=qEB9DjgMlhpjywJPo_2xiCAdqPbQXTfDQaVpzEb_G7Q="
-            alt="cargo"
-            class="w-100"
+            alt="Cargo handling at airport"
+            class="img-fluid"
           />
         </div>
       </div>
@@ -231,94 +232,188 @@
 
     <!-- our services -->
 
-    <section>
-      <div class="row my-5">
-        <h1 class="text-center">Our Services</h1>
-        <div class="col-lg-4">
-          <h4>Procurement Services</h4>
-          <p>
-            Ojogbonn logistics is a major mover of a range of oil field
-            equipment and materials. We have established, strong relationships
-            with a host of Original Equipment Manufacturers (OEMs), as well as
-            Procurement service companies worldwide ensuring that OFT Global can
-            offer Procurement services on a global basis.
-          </p>
-        </div>
-        <div class="col-lg-4">
-          <h4>Freight forwarding</h4>
-          <p>
-            Ojogbonn logistics is at the forefront of the freight forwarding
-            industry,<br />
-            providing first class customer service to importers, exporters and
-            industry
-          </p>
-        </div>
-        <div class="col-lg-4">
-          <h4>Logistics</h4>
-          <p>
-            Another key advantage of Ojogbonn logistics is having the expertise
-            on the ground at destination in Nigeria to effectively and
-            efficiently clear your cargo through the potentially complicated
-            maze that is synonymous with customs procedures throughout the
-            developing world.
-          </p>
+    <section class="bg-secondary py-4">
+      <div class="container">
+        <div class="row mb-3 text-bold text-center text-dark">
+          <!-- Service Enquiries -->
+          <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+            <h3>Service Enquiries</h3>
+            <p>Please contact us by email.</p>
+            <form action="#" method="post" class="contactForm">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  class="form-control"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="form-control"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  class="form-control"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+              <button type="button" class="btn btn-dark mt-2">Submit</button>
+            </form>
+          </div>
+
+          <!-- Service Updates -->
+          <div class="col-12 col-lg-6">
+            <h3>Service Updates</h3>
+            <p>
+              Get the latest service alerts, news, events and opportunities.
+            </p>
+            <form>
+              <div class="input-group">
+                <input
+                  type="email"
+                  placeholder="Your Email Address (required)"
+                  class="form-control"
+                />
+                <div class="input-group-append">
+                  <button class="btn btn-dark" type="button">Subscribe</button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- form -->
-    <section class="container w-100 my-5 sm">
-      <div class="row mb-3 bg-dark text-bold text-center text-warning">
-        <div class="col-lg-6">
-          <h3>Service Enquiries</h3>
-          <p>Please contact us by email.</p>
-          <form action="#" method="post" class="contactForm">
-            <div class="formGroup align-items-center justify-content-center">
-              <label for="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                placeholder="Your Name"
-              />
+    <section class="bg-secondary py-4">
+      <div class="container">
+        <div class="row mb-3 text-bold text-center text-dark">
+          <!-- Service Enquiries -->
+          <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+            <h3>Service Enquiries</h3>
+            <p>Please contact us by email.</p>
+            <form action="#" method="post" class="contactForm">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  class="form-control"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="form-control"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  class="form-control"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+              <button type="button" class="btn btn-dark mt-2">Submit</button>
+            </form>
+          </div>
 
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                placeholder="Your Email"
-              />
-
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                required
-                placeholder="Your Message"
-                class="w-100 p-5"
-              ></textarea>
-            </div>
-          </form>
-          <button type="submit text-warning ">Submit</button>
-        </div>
-
-        <div class="col-lg-6 my-5">
-          <h3>Service Updates</h3>
-          <p>Get the latest service alerts, news, events and opportunities.</p>
-
-          <form>
-            <input
-              type="email"
-              placeholder="Your Email Address(required)"
-              class="p-2 w-50"
-            />
-          </form>
+          <!-- Service Updates -->
+          <div class="col-12 col-lg-6">
+            <h3>Service Updates</h3>
+            <p>
+              Get the latest service alerts, news, events and opportunities.
+            </p>
+            <form>
+              <div class="input-group">
+                <input
+                  type="email"
+                  placeholder="Your Email Address (required)"
+                  class="form-control"
+                />
+                <div class="input-group-append">
+                  <button class="btn btn-dark" type="button">Subscribe</button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
+    </section>
+
+    <!-- address -->
+    <section>
+      <div class="container-fluid p-5 my-5 bg-dark text-light">
+        <div class="row">
+          <div class="col">
+            <h6>Ojogbonn Logistics - Operational Office</h6>
+            <p>
+              SAHCO Office Complex, MMIA International Airport, Ikeja, Lagos
+              State, Nigeria.<br />
+              <strong>Phone:</strong> +234-0805-626-6468
+            </p>
+          </div>
+          <div class="col">
+            <h6>Ojogbonn Head Office</h6>
+            <p>
+              33 Kajola Road, Obawole Estate, Iju Ishaga, Ifako Ijaiye Local
+              Govt., Lagos State, Nigeria.
+            </p>
+          </div>
+          <div class="col">
+            <h6>Ojogbonn Email & Social Media Handle .</h6>
+            <p>
+              <strong>Email:</strong> contact@ojogbonnlogisticsventure.com,
+              ajayiolaoluwa8@gmail.com<br />
+              <strong>X (formerly Twitter):</strong> @ojogbonnlogistics
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <footer class="footer mt-auto py-1 bg-warning">
+        <div class="container d-flex align-items-center">
+          <img
+            src="./image/oj.jpg"
+            alt="logo"
+            class="img-fluid"
+            style="max-height: 20px; max-width: 50px"
+          />
+          <span class="text-muted small ms-2">
+            Copyright © 2025. All Rights Reserved - OJOGBONN LOGISTICS VENTURE
+          </span>
+        </div>
+      </footer>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
