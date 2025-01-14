@@ -393,5 +393,31 @@
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          const message = document.getElementById("message").value;
+
+          if (name && email && message) {
+            document.getElementById("contactStatus").textContent = "Sending...";
+
+            // Here you would normally send this data to a server
+            setTimeout(() => {
+              document.getElementById("contactStatus").textContent =
+                "Message sent!";
+              // Reset the form after sending
+              event.target.reset();
+            }, 1000);
+          } else {
+            document.getElementById("contactStatus").textContent =
+              "Please fill in all fields.";
+          }
+        });
+    </script>
   </body>
 </html>
