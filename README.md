@@ -23,8 +23,3 @@ This project is a static HTML website built with Bootstrap 5.3.3 for styling and
 - **Bootstrap 5.3.3**: For responsive design and pre-built components.
 - **JavaScript**: Basic form handling and Bootstrap functionality.
 
-## Installation
-
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/your-username/ojogbonn-logistics.git
